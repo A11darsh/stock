@@ -17,7 +17,7 @@ public class StockApplication extends SpringBootServletInitializer  {
 		SpringApplication.run(StockApplication.class, args);
 		Stock stock=new Stock();
 		stock.getName();
-		
+		System.out.println("Hello");
 		}
 
 	@Override
