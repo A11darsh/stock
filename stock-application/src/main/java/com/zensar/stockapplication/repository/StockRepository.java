@@ -17,4 +17,5 @@ public interface StockRepository extends JpaRepository<Stock, Long>{
 	@Query(value="select * from stock where name=:StockName and price=:StockPrice",nativeQuery=true)
 	List<Stock> findStockByNameAndPrice(@Param("StockName") String name, @Param("StockPrice") double stockPrice);
 	
+	
 }

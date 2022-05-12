@@ -118,7 +118,7 @@ public class StockController {
 	// @PostMapping("/stocks")
 	// @RequestMapping(method = RequestMethod.POST)
 
-	@PostMapping()
+	@PostMapping("/create")
 	public ResponseEntity<Stock> createStock(@RequestBody StockDto stock, @RequestHeader("auth-token") String token) {
 		StockDto createStock = stockService.createStock(stock, token);
 		if (createStock == null)
